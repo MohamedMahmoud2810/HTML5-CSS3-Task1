@@ -1,0 +1,13 @@
+@keyframes draw1 {
+    from {
+    stroke-dashoffset: 1120;
+    }
+    to {
+    stroke-dashoffset: 2240;
+    }
+}
+.path2 {
+    stroke-dasharray: 1120;
+    /* stroke-dashoffset: 800; */
+    animation: draw1 5s linear ;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <video src="videos/1.mp4" id="vid"></video>
+        <input type="range" class="time" id="playback" value="0" width="600" ><br>
+        <span class="container"
+        ><span class="playback-current">0:00</span>/
+        <span class="playback-end">0:00</span></span>
+        <button id="play">Play</button>
+        <button id="stop">Stop</button>
+        <button id="l-10"><<</button>
+        <button id="l-5"><</button>
+        <button id="r-5">></button>
+        <button id="r-10">>></button>
+        <input type="range" id="sound">
+        <button id="mute">Mute</button><br>
+        <label class="word">Speed :</label>
+        <input type="range" id="speed" step="0.5" min="0.5" max="2" value="1" list="tickmarks">
+        <datalist id="tickmarks">
+            <option value="0.5"></option>
+            <option value="1"></option>
+            <option value="1.5"></option>
+            <option value="2"></option>
+        </datalist>
+    </div>
+
+
+    <script src="file.js">
+        
+
+    </script>
+</body>
+</html>

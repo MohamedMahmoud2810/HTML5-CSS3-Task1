@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="400" height="400" style="border:2px solid red">
+    <line id="path" class="path2" x1="0" y1="0" x2="400" y2="400" style="stroke:blue ;" />
+    </svg>
+
+    <script>
+        const line = document.getElementById("path");
+        if(x2==400 && y2==400){
+            alert("animation completed");
+        }
+    </script>
+</body>
+</html>

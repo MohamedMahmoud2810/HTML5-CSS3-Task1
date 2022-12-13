@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    justify-content: center;
+}
+input{
+    width: 255px;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+}
+#red{
+    accent-color: red;
+}
+#green{
+    accent-color: green;
+}
+#blue{
+    accent-color: blue;
+}
+h2{
+    font-family: verdana;
+    text-transform: uppercase;
+}
+    </style>
+</head>
+<body>
+    <h2>Red</h2>
+    <input type="range" min="0" max="255" value="1" onchange="setBg()" step="5" id="red"></input>
+    <h2>Green</h2>
+    <input type="range" min="0" max="255" value="1" onchange="setBg()"  id="green" step="5" ></input>
+    <h2>Blue</h2>
+    <input type="range" min="0" max="255" value="1"  step="5" onchange="setBg()"  id="blue"></input>
+    
+    <h1 id="heading">Change the three colors range above and observe my color change</h1>
+    <script src="file.js">
+    </script>
+
+</body>
+</html>
